@@ -7,7 +7,7 @@ function bubble_sort(&$arr) {
         for($j=0; $j<$len-1-$i; $j++) {
             if ($arr[$j] > $arr[$j+1]) {
                  swap($arr[$j], $arr[$j+1]);
-	   $flag = true;
+	             $flag = true;
             }
         }
         if (!$flag) {break;}

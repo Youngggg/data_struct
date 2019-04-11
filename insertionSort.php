@@ -8,7 +8,7 @@ function insertion_sort(&$arr) {
             for ($j = $i-1; $j >= 0; $j--) {
                 if ($arr[$j] > $temp) {
                     $arr[$j + 1] = $arr[$j];
-	  } else {
+	            } else {
                     break;
                 }
             }
