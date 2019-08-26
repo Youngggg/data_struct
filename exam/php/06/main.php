@@ -37,6 +37,7 @@ class main
             $remainNode = $slow->next;
             $slow->next = $pre;
             $pre = $slow;
+            var_dump($pre);
             $slow = $remainNode;
         }
 
@@ -157,15 +158,16 @@ class main
     }
 }
 
-//$list = new SingleLinkList();
-//$list->insert('a');
-//$list->insert('b');
-//$list->insert('c');
-//$list->insert('d');
-//$list->insert('e');
-//$list->insert('f');
-//
-//$main = new main();
+$list = new SingleLinkList();
+$list->insert('a');
+$list->insert('b');
+$list->insert('c');
+$list->insert('c');
+$list->insert('b');
+$list->insert('a');
+
+$main = new main();
+var_dump($main->isPalindrome($list));
 //var_dump($list->printList());
 //var_dump($main->reverse($list)->printList());
 
